@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,14 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 5f;
     float horizontalInput;
+
+    [Header("Dashing")]
+    public float dashSpeed = 20f;
+    public float dashDuration = 0.1f;
+    public float dashCooldown = 0.1f;
+    bool isDashing = false;
+    bool canDash = true;
+    TrailRenderer trailRenderer; 
 
     [Header("Jumping")]
     public float jumpForce = 5f;
@@ -46,13 +55,15 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        trailRenderer = GetComponent<TrailRenderer>();
+        trailRenderer.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (IsDead()) return;
+        if (isDashing) return; // Skip movement if dashing
         GroundCheck();
         Gravity();
         WallSlide();
@@ -76,6 +87,23 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         horizontalInput = context.ReadValue<Vector2>().x;
+    }
+    public void Dash(InputAction.CallbackContext context)
+    {
+        if (context.performed && canDash) { 
+            StartCoroutine(DashCoroutine());
+        }
+    }
+    private IEnumerator DashCoroutine() {
+        isDashing = true;
+        canDash = false;
+        rb.linearVelocity = new Vector2(horizontalInput * dashSpeed, rb.linearVelocity.y);
+        trailRenderer.enabled = true; // Enable the trail renderer
+        yield return new WaitForSeconds(dashDuration);
+        isDashing = false;
+        trailRenderer.enabled = false; // Disable the trail renderer
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 
     public void Jump(InputAction.CallbackContext context)
