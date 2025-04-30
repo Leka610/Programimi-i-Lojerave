@@ -1130,6 +1130,8 @@ MonoBehaviour:
   levels:
   - {fileID: 204960037}
   - {fileID: 1500047775}
+  healthUI: {fileID: 268951660}
+  playerHealth: {fileID: 1576510844}
 --- !u!4 &64580609
 Transform:
   m_ObjectHideFlags: 0
@@ -4063,6 +4065,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &268951658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268951659}
+  - component: {fileID: 268951660}
+  - component: {fileID: 268951661}
+  m_Layer: 5
+  m_Name: HealthContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &268951659
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268951658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.82, y: 0.82, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2002423735}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -868, y: 466}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &268951660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268951658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cae1ccd3b6763248a228a3350318be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartPrefab: {fileID: 4578085618221581304, guid: 51f3c1f3c14a31d4ea8abd667d06a7d1, type: 3}
+  fullHeartSprite: {fileID: -566316334, guid: 32e9c1727522e4e4395402f3fc5c40cc, type: 3}
+--- !u!114 &268951661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268951658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 10
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &285470222
 GameObject:
   m_ObjectHideFlags: 0
@@ -6016,26 +6095,50 @@ CompositeCollider2D:
   m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
-    - - {x: 2.999971, y: -6}
-      - {x: 2.999971, y: -5.5625}
-      - {x: 2, y: -5.562529}
-      - {x: 2.0000293, y: -6}
-    - - {x: -1.0000293, y: -6}
-      - {x: -1.0000293, y: -5.5625}
-      - {x: -2, y: -5.562529}
-      - {x: -1.9999708, y: -6}
-    - - {x: 1.9999708, y: -7}
-      - {x: 1.9999708, y: -6.5625}
-      - {x: 1, y: -6.562529}
-      - {x: 1.0000293, y: -7}
-    - - {x: -0.000029300001, y: -7}
-      - {x: -0.000029300001, y: -6.5625}
-      - {x: -1, y: -6.562529}
-      - {x: -0.99997073, y: -7}
-    - - {x: 13.999971, y: -10}
-      - {x: 13.999971, y: -9.5625}
-      - {x: 7, y: -9.56253}
-      - {x: 7.0000296, y: -10}
+    - - {x: 2.874971, y: -6}
+      - {x: 2.874971, y: -5.5625}
+      - {x: 2.0625, y: -5.562529}
+      - {x: 2.0625293, y: -6}
+    - - {x: -1.1250293, y: -6}
+      - {x: -1.1250293, y: -5.5625}
+      - {x: -1.9375, y: -5.562529}
+      - {x: -1.9374708, y: -6}
+    - - {x: 1.8749708, y: -7}
+      - {x: 1.8749708, y: -6.5625}
+      - {x: 1.0625, y: -6.562529}
+      - {x: 1.0625293, y: -7}
+    - - {x: -0.1250293, y: -7}
+      - {x: -0.1250293, y: -6.5625}
+      - {x: -0.9375, y: -6.562529}
+      - {x: -0.93747073, y: -7}
+    - - {x: 13.874971, y: -10}
+      - {x: 13.874971, y: -9.5625}
+      - {x: 13.0625, y: -9.56253}
+      - {x: 13.06253, y: -10}
+    - - {x: 12.87497, y: -10}
+      - {x: 12.87497, y: -9.5625}
+      - {x: 12.0625, y: -9.56253}
+      - {x: 12.06253, y: -10}
+    - - {x: 11.87497, y: -10}
+      - {x: 11.87497, y: -9.5625}
+      - {x: 11.0625, y: -9.56253}
+      - {x: 11.06253, y: -10}
+    - - {x: 10.87497, y: -10}
+      - {x: 10.87497, y: -9.5625}
+      - {x: 10.0625, y: -9.56253}
+      - {x: 10.06253, y: -10}
+    - - {x: 9.87497, y: -10}
+      - {x: 9.87497, y: -9.5625}
+      - {x: 9.0625, y: -9.56253}
+      - {x: 9.06253, y: -10}
+    - - {x: 8.87497, y: -10}
+      - {x: 8.87497, y: -9.5625}
+      - {x: 8.0625, y: -9.56253}
+      - {x: 8.06253, y: -10}
+    - - {x: 7.8749704, y: -10}
+      - {x: 7.8749704, y: -9.5625}
+      - {x: 7.0625, y: -9.56253}
+      - {x: 7.0625296, y: -10}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -10450,23 +10553,9 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1360551077}
-    m_ColliderPaths:
-    - - X: 90000000
-        Y: -95625000
-      - X: 40000000
-        Y: -95625000
-      - X: 40000000
-        Y: -100000000
-      - X: 90000000
-        Y: -100000000
+  m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: 8.99997, y: -10}
-      - {x: 8.99997, y: -9.5625}
-      - {x: 4, y: -9.56253}
-      - {x: 4.000029, y: -10}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -10528,9 +10617,9 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_CompositeOperation: 1
+  m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -11438,7 +11527,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  currentHealth: 0
   invincibilityDuration: 1
+  healthUI: {fileID: 268951660}
 --- !u!4 &1637269532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6414786639413836623, guid: 782346fdf62e4934d8fe24f45f98a95b, type: 3}
@@ -14343,6 +14434,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 457867781}
+  - {fileID: 268951659}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

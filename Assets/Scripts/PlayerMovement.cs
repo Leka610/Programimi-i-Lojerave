@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (IsDead()) return;
         GroundCheck();
         Gravity();
         WallSlide();
@@ -66,6 +67,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("magnitude", rb.linearVelocity.magnitude);
         animator.SetBool("isWallSliding", isWallSliding);
     }
+    private bool IsDead()
+    {
+        // Return true if the player is dead; you can use a health check or other condition
+        return GetComponent<PlayerHealth>().currentHealth <= 0;
+    }
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -74,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
+        if (IsDead()) return;
         // Perform the actual jump
         if (context.performed && jumpsRemaining > 0)
         {

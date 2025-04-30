@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     public GameObject levelLoader;
     public List <GameObject> levels;
     private int currentLevelIndex = 0;
+    public HealthUI healthUI;
+    public PlayerHealth playerHealth; // Reference to the PlayerHealth script
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,5 +49,14 @@ public class GameController : MonoBehaviour
 
         progressAmount = 0;
         progressSlider.value = 0;
+
+        if (healthUI != null)
+        {
+            healthUI.SetMaxHearts(playerHealth.maxHealth);  // Reset hearts using the Player's max health
+        }
+        if (playerHealth != null)
+        {
+            playerHealth.ResetHealth();  // Call a method to reset the health
+        }
     }
 }
