@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     private Color originalColor;
     private Animator animator;
     public HealthUI healthUI;
+    public static event Action OnPlayerDeath;
 
     void Start()
     {
@@ -19,12 +21,12 @@ public class PlayerHealth : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         animator = GetComponent<Animator>();
+        GameController.OnGameOver += ResetHealth;  // Subscribe to the OnGameOver event
     }
 
     public void TakeDamage(int amount, Vector2 hitDirection, float knockbackForce = 8f)
     {
         if (isInvincible) return;
-
         currentHealth -= amount;
         healthUI.UpdateHearts(currentHealth);
         Debug.Log("Player hit");
@@ -67,6 +69,8 @@ public class PlayerHealth : MonoBehaviour
         {
             movementScript.enabled = false;  // Disable the movement script to stop inputs
         }
+
+        OnPlayerDeath.Invoke();  // Notify any listeners that the player has died
 
         // Additional logic for death (e.g., game over, respawn, etc.)
     }
