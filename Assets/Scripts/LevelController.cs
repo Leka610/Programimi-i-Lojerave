@@ -8,11 +8,13 @@ public class LevelController : MonoBehaviour
     public GameObject cherryPrefab; // Reference to the Cherry prefab
     public GameObject strawberryPrefab; // Reference to the Strawberry prefab
     public GameObject applePrefab; // Reference to the Apple prefab
+    public GameObject orangePrefab;
 
     private List<Vector3> bananaPositions = new List<Vector3>(); // List to hold positions for respawning bananas
     private List<Vector3> cherryPositions = new List<Vector3>(); // List to hold positions for respawning cherries
     private List<Vector3> strawberryPositions = new List<Vector3>(); // List to hold positions for respawning strawberries
     private List<Vector3> applePositions = new List<Vector3>(); // List to hold positions for respawning apples
+    private List<Vector3> orangePositions = new List<Vector3>(); // List to hold positions for respawning oranges
 
     void Start()
     {
@@ -27,6 +29,7 @@ public class LevelController : MonoBehaviour
         Transform cherriesParent = itemsParent.transform.Find("Cherries");
         Transform strawberriesParent = itemsParent.transform.Find("Strawberries");
         Transform applesParent = itemsParent.transform.Find("Apples");
+        Transform orangesParent = itemsParent.transform.Find("Oranges");
 
         // Store initial positions of bananas and cherries and destroy them (since we'll respawn them)
         if (bananasParent != null)
@@ -66,6 +69,15 @@ public class LevelController : MonoBehaviour
             }
         }
 
+        if (orangesParent != null)
+        {
+            foreach (Transform fruit in orangesParent)
+            {
+                orangePositions.Add(fruit.position); // Store position
+                Destroy(fruit.gameObject); // Destroy the initial instance
+            }
+        }
+
         // Now, instantiate the fruits at their original positions when the game starts
         RespawnCollectibles();
     }
@@ -94,6 +106,12 @@ public class LevelController : MonoBehaviour
         for (int i = 0; i < applePositions.Count; i++)
         {
             Instantiate(applePrefab, applePositions[i], Quaternion.identity, itemsParent.transform);
+        }
+
+        // Respawn the oranges at their original positions (if needed)
+        for (int i = 0; i < orangePositions.Count; i++)
+        {
+            Instantiate(orangePrefab, orangePositions[i], Quaternion.identity, itemsParent.transform);
         }
     }
 }

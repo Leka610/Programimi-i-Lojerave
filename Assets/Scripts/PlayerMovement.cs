@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator animator;
+    BoxCollider2D playerCollider;
     bool isFacingRight = true;
 
     [Header("Movement")]
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
     public LayerMask groundLayer;
     bool isGrounded;
+    bool isOnPlatform; // Check if the player is on a platform
 
     [Header("Gravity")]
     public float baseGravity = 4f;
@@ -57,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
     {
         trailRenderer = GetComponent<TrailRenderer>();
         trailRenderer.enabled = false;
+        playerCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -104,6 +107,33 @@ public class PlayerMovement : MonoBehaviour
         trailRenderer.enabled = false; // Disable the trail renderer
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+    }
+
+    public void Drop(InputAction.CallbackContext context) {
+        if (context.performed && isGrounded && isOnPlatform && playerCollider.enabled) {
+           StartCoroutine(DisablePlayerCollider(0.25f)); // Disable the collider for 0.5 seconds
+        }
+    }
+
+    private IEnumerator DisablePlayerCollider(float disableTime) { 
+        playerCollider.enabled = false; // Disable the collider
+        yield return new WaitForSeconds(disableTime); // Wait for the specified time
+        playerCollider.enabled = true; // Re-enable the collider
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("PassablePlatform"))
+        {
+            isOnPlatform = true; // Set the flag to true when on a moving platform
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("PassablePlatform"))
+        {
+            isOnPlatform = false; // Set the flag to true when on a moving platform
+        }
     }
 
     public void Jump(InputAction.CallbackContext context)

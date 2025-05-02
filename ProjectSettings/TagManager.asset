@@ -8,6 +8,8 @@ TagManager:
   - Cherry
   - Strawberry
   - Apple
+  - PassablePlatform
+  - Orange
   layers:
   - Default
   - TransparentFX
