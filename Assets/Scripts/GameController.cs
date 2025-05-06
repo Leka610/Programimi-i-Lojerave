@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
 
     void GameOverScreen() { 
         gameOverScreen.SetActive(true);  // Show the Game Over screen
-        survivedText.text = "You Reached Level " + (survivedLevelsCount+1) + "!";  // Update the text with the number of levels survived
+        survivedText.text = "You Reached Level " + (currentLevelIndex+1) + "!";  // Update the text with the number of levels survived
     }
 
     public void RestartGame() {

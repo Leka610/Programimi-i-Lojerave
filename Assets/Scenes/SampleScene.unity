@@ -8630,6 +8630,142 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &462483051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 462483054}
+  - component: {fileID: 462483053}
+  - component: {fileID: 462483052}
+  m_Layer: 5
+  m_Name: SignMessage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &462483052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462483051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 32
+  m_fontSizeBase: 32
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &462483053
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462483051}
+  m_CullTransparentMesh: 1
+--- !u!224 &462483054
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462483051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1922964536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.0001, y: 102.9846}
+  m_SizeDelta: {x: 501.7178, y: 70.663}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &464441831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13050,7 +13186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &525782493
 Transform:
   m_ObjectHideFlags: 0
@@ -14152,33 +14288,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 583502677}
-    m_ColliderPaths:
-    - - X: -1250000
-        Y: -85625000
-      - X: -9375000
-        Y: -85625000
-      - X: -9375000
-        Y: -90000000
-      - X: -1250000
-        Y: -90000000
-    - - X: 8750000
-        Y: -85625000
-      - X: 625000
-        Y: -85625000
-      - X: 625000
-        Y: -90000000
-      - X: 8750000
-        Y: -90000000
-    - - X: 18750000
-        Y: -85625000
-      - X: 10625000
-        Y: -85625000
-      - X: 10625000
-        Y: -90000000
-      - X: 18750000
-        Y: -90000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 1.8749708, y: -9}
@@ -14550,7 +14660,213 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 622082315}
+    m_ColliderPaths:
+    - - X: 110000000
+        Y: 26250000
+      - X: 110625000
+        Y: 25625000
+      - X: 120000000
+        Y: 25625000
+      - X: 120000000
+        Y: 26250000
+      - X: 120625000
+        Y: 25625000
+      - X: 129375000
+        Y: 25625000
+      - X: 130000000
+        Y: 26250000
+      - X: 130000000
+        Y: 30000000
+      - X: 100000000
+        Y: 30000000
+      - X: 100000000
+        Y: 26250000
+      - X: 100625000
+        Y: 25625000
+      - X: 110000000
+        Y: 25625000
+    - - X: 110000000
+        Y: 6250000
+      - X: 110625000
+        Y: 5625000
+      - X: 120000000
+        Y: 5625000
+      - X: 120000000
+        Y: 6250000
+      - X: 120625000
+        Y: 5625000
+      - X: 129375000
+        Y: 5625000
+      - X: 130000000
+        Y: 6250000
+      - X: 130000000
+        Y: 10000000
+      - X: 100000000
+        Y: 10000000
+      - X: 100000000
+        Y: 6250000
+      - X: 100625000
+        Y: 5625000
+      - X: 110000000
+        Y: 5625000
+    - - X: 110000000
+        Y: -23750000
+      - X: 110625000
+        Y: -24375000
+      - X: 120000000
+        Y: -24375000
+      - X: 120000000
+        Y: -23750000
+      - X: 120625000
+        Y: -24375000
+      - X: 129375000
+        Y: -24375000
+      - X: 130000000
+        Y: -23750000
+      - X: 130000000
+        Y: -20000000
+      - X: 100000000
+        Y: -20000000
+      - X: 100000000
+        Y: -23750000
+      - X: 100625000
+        Y: -24375000
+      - X: 110000000
+        Y: -24375000
+    - - X: 110000000
+        Y: -53750000
+      - X: 110625000
+        Y: -54375000
+      - X: 120000000
+        Y: -54375000
+      - X: 120000000
+        Y: -53750000
+      - X: 120625000
+        Y: -54375000
+      - X: 129375000
+        Y: -54375000
+      - X: 130000000
+        Y: -53750000
+      - X: 130000000
+        Y: -50000000
+      - X: 100000000
+        Y: -50000000
+      - X: 100000000
+        Y: -53750000
+      - X: 100625000
+        Y: -54375000
+      - X: 110000000
+        Y: -54375000
+    - - X: -30000000
+        Y: -73750000
+      - X: -29375000
+        Y: -74375000
+      - X: -20000000
+        Y: -74375000
+      - X: -20000000
+        Y: -73750000
+      - X: -19375000
+        Y: -74375000
+      - X: -10000000
+        Y: -74375000
+      - X: -10000000
+        Y: -73750000
+      - X: -9375000
+        Y: -74375000
+      - X: 0
+        Y: -74375000
+      - X: 0
+        Y: -73750000
+      - X: 625000
+        Y: -74375000
+      - X: 10000000
+        Y: -74375000
+      - X: 10000000
+        Y: -73750000
+      - X: 10625000
+        Y: -74375000
+      - X: 20000000
+        Y: -74375000
+      - X: 20000000
+        Y: -73750000
+      - X: 20625000
+        Y: -74375000
+      - X: 30000000
+        Y: -74375000
+      - X: 30000000
+        Y: -73750000
+      - X: 30625000
+        Y: -74375000
+      - X: 40000000
+        Y: -74375000
+      - X: 40000000
+        Y: -73750000
+      - X: 40625000
+        Y: -74375000
+      - X: 50000000
+        Y: -74375000
+      - X: 50000000
+        Y: -73750000
+      - X: 50625000
+        Y: -74375000
+      - X: 60000000
+        Y: -74375000
+      - X: 60000000
+        Y: -73750000
+      - X: 60625000
+        Y: -74375000
+      - X: 70000000
+        Y: -74375000
+      - X: 70000000
+        Y: -73750000
+      - X: 70625000
+        Y: -74375000
+      - X: 80000000
+        Y: -74375000
+      - X: 80000000
+        Y: -73750000
+      - X: 80625000
+        Y: -74375000
+      - X: 90000000
+        Y: -74375000
+      - X: 90000000
+        Y: -73750000
+      - X: 90625000
+        Y: -74375000
+      - X: 100000000
+        Y: -74375000
+      - X: 100000000
+        Y: -73750000
+      - X: 100625000
+        Y: -74375000
+      - X: 110000000
+        Y: -74375000
+      - X: 110000000
+        Y: -73750000
+      - X: 110625000
+        Y: -74375000
+      - X: 120000000
+        Y: -74375000
+      - X: 120000000
+        Y: -73750000
+      - X: 120625000
+        Y: -74375000
+      - X: 129375000
+        Y: -74375000
+      - X: 130000000
+        Y: -73750000
+      - X: 130000000
+        Y: -70000000
+      - X: -40000000
+        Y: -70000000
+      - X: -40000000
+        Y: -73750000
+      - X: -39375000
+        Y: -74375000
+      - X: -30000000
+        Y: -74375000
   m_CompositePaths:
     m_Paths:
     - - {x: 10.99997, y: 2.5625}
@@ -15458,9 +15774,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 128415483}
     m_Modifications:
+    - target: {fileID: 1058401277626449393, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2889334234524598293, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_Name
       value: Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.x
+      value: 4.2315826
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.y
+      value: 3.500204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.14385939
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.36708552
       objectReference: {fileID: 0}
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15501,6 +15837,20 @@ PrefabInstance:
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 462483052}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 1922964535}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: customMessage
+      value: By pressing Left SHIFT while moving you can DASH for a short period
+        of time. Combine that with the previously mentioned mechanics to get through
+        this level.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15612,13 +15962,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 623927455}
     m_Modifications:
+    - target: {fileID: 1058401277626449393, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2889334234524598293, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_Name
       value: Sign
       objectReference: {fileID: 0}
     - target: {fileID: 2889334234524598293, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.x
+      value: 4.69788
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.y
+      value: 3.5101233
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.30755758
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.36212587
       objectReference: {fileID: 0}
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15659,6 +16029,20 @@ PrefabInstance:
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 462483052}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 1922964535}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: customMessage
+      value: When 2 platforms are far apart, you can DOUBLE JUMP by pressing W twice
+        in a row to cover the gap. You can also go DOWN through some platforms by
+        pressing S.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18485,69 +18869,7 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 917429503}
-    m_ColliderPaths:
-    - - X: -140000000
-        Y: -13750000
-      - X: -139375008
-        Y: -14375000
-      - X: -130000000
-        Y: -14375000
-      - X: -130000000
-        Y: -13750000
-      - X: -129375000
-        Y: -14375000
-      - X: -120625000
-        Y: -14375000
-      - X: -120000000
-        Y: -13750000
-      - X: -120000000
-        Y: -10000000
-      - X: -150000000
-        Y: -10000000
-      - X: -150000000
-        Y: -13750000
-      - X: -149375008
-        Y: -14375000
-      - X: -140000000
-        Y: -14375000
-    - - X: 70000000
-        Y: -13750000
-      - X: 70000000
-        Y: -14375000
-      - X: 79375000
-        Y: -14375000
-      - X: 80000000
-        Y: -13750000
-      - X: 80000000
-        Y: -10000000
-      - X: 60000000
-        Y: -10000000
-      - X: 60000000
-        Y: -13750000
-      - X: 60625000
-        Y: -14375000
-      - X: 69375000
-        Y: -14375000
-    - - X: 70000000
-        Y: -33750000
-      - X: 70000000
-        Y: -34375000
-      - X: 79375000
-        Y: -34375000
-      - X: 80000000
-        Y: -33750000
-      - X: 80000000
-        Y: -30000000
-      - X: 60000000
-        Y: -30000000
-      - X: 60000000
-        Y: -33750000
-      - X: 60625000
-        Y: -34375000
-      - X: 69375000
-        Y: -34375000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 6.9374895, y: -1.4375}
@@ -22343,9 +22665,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 525782493}
     m_Modifications:
+    - target: {fileID: 1058401277626449393, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2889334234524598293, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_Name
       value: Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.x
+      value: 5.193781
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.y
+      value: 3.528925
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0070548058
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.35272497
       objectReference: {fileID: 0}
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22386,6 +22728,20 @@ PrefabInstance:
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 462483052}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 1922964535}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: customMessage
+      value: The Fan will push you high up in the air. Use the momentum from that
+        launch to get all the fruits in this level. Don't forget that you can use
+        your Jumps and Dash even in the air.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23686,73 +24042,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1198233547}
-    m_ColliderPaths:
-    - - X: 170000000
-        Y: 80000000
-      - X: 150000000
-        Y: 80000000
-      - X: 150000000
-        Y: -60000000
-      - X: 140000000
-        Y: -60000000
-      - X: 140000000
-        Y: -80000000
-      - X: 130000000
-        Y: -80000000
-      - X: 130000000
-        Y: -90000000
-      - X: -10000000
-        Y: -90000000
-      - X: -10000000
-        Y: -50000000
-      - X: -50000000
-        Y: -50000000
-      - X: -50000000
-        Y: -70000000
-      - X: -70000000
-        Y: -70000000
-      - X: -70000000
-        Y: -80000000
-      - X: -80000000
-        Y: -80000000
-      - X: -80000000
-        Y: -90000000
-      - X: -150000000
-        Y: -90000000
-      - X: -150000000
-        Y: 90000000
-      - X: -170000000
-        Y: 90000000
-      - X: -170000000
-        Y: -120000000
-      - X: 170000000
-        Y: -120000000
-    - - X: 120000000
-        Y: -50000000
-      - X: 60000000
-        Y: -50000000
-      - X: 60000000
-        Y: -10000000
-      - X: 40000000
-        Y: -10000000
-      - X: 40000000
-        Y: -60000000
-      - X: 100000000
-        Y: -60000000
-      - X: 100000000
-        Y: -70000000
-      - X: 120000000
-        Y: -70000000
-    - - X: 100000000
-        Y: -10000000
-      - X: 80000000
-        Y: -10000000
-      - X: 80000000
-        Y: -30000000
-      - X: 100000000
-        Y: -30000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 16.999971, y: -12}
@@ -27151,9 +27441,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1500047776}
     m_Modifications:
+    - target: {fileID: 1058401277626449393, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2889334234524598293, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_Name
       value: Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.x
+      value: 5.4973726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.y
+      value: 3.5030503
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.08603907
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.36566228
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27194,6 +27508,28 @@ PrefabInstance:
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: signText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 462483052}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 1922964535}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: customMessage
+      value: Use A,D to move Left,Right. Press W to JUMP, or hold it to JUMP HIGHER.
+        Collect all fruits and avoid the spikes. When you collect all the fruits,
+        hold E to get to the next level. Good Luck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: signMessagePanel
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27690,7 +28026,73 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1459978967}
+    m_ColliderPaths:
+    - - X: 170000000
+        Y: 120000000
+      - X: 160000000
+        Y: 120000000
+      - X: 160000000
+        Y: 30000000
+      - X: 150000000
+        Y: 30000000
+      - X: 150000000
+        Y: -110000000
+      - X: 140000000
+        Y: -110000000
+      - X: 140000000
+        Y: 30000000
+      - X: 130000000
+        Y: 30000000
+      - X: 130000000
+        Y: -110000000
+      - X: -160000000
+        Y: -110000000
+      - X: -160000000
+        Y: 110000000
+      - X: 50000000
+        Y: 110000000
+      - X: 50000000
+        Y: 120000000
+      - X: -170000000
+        Y: 120000000
+      - X: -170000000
+        Y: -120000000
+      - X: 170000000
+        Y: -120000000
+    - - X: -140000000
+        Y: 60000000
+      - X: -150000000
+        Y: 60000000
+      - X: -150000000
+        Y: -10000000
+      - X: -140000000
+        Y: -10000000
+    - - X: -120000000
+        Y: 60000000
+      - X: -130000000
+        Y: 60000000
+      - X: -130000000
+        Y: 40000000
+      - X: -120000000
+        Y: 40000000
+    - - X: 100000000
+        Y: 20000000
+      - X: 90000000
+        Y: 20000000
+      - X: 90000000
+        Y: -60000000
+      - X: 100000000
+        Y: -60000000
+    - - X: -120000000
+        Y: 20000000
+      - X: -130000000
+        Y: 20000000
+      - X: -130000000
+        Y: -10000000
+      - X: -120000000
+        Y: -10000000
   m_CompositePaths:
     m_Paths:
     - - {x: 16.999971, y: -12}
@@ -30002,7 +30404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1500047776
 Transform:
   m_ObjectHideFlags: 0
@@ -30351,7 +30753,7 @@ GameObject:
   - component: {fileID: 1576510842}
   - component: {fileID: 1576510844}
   - component: {fileID: 1576510845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -33175,7 +33577,121 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1854404118}
+    m_ColliderPaths:
+    - - X: 160000000
+        Y: 120000000
+      - X: 50000000
+        Y: 120000000
+      - X: 50000000
+        Y: 110000000
+      - X: 160000000
+        Y: 110000000
+    - - X: 160000000
+        Y: 90000000
+      - X: 80000000
+        Y: 90000000
+      - X: 80000000
+        Y: 80000000
+      - X: 160000000
+        Y: 80000000
+    - - X: 80000000
+        Y: 80000000
+      - X: 70000000
+        Y: 80000000
+      - X: 70000000
+        Y: 70000000
+      - X: 80000000
+        Y: 70000000
+    - - X: -20000000
+        Y: 70000000
+      - X: -50000000
+        Y: 70000000
+      - X: -50000000
+        Y: 50000000
+      - X: -110000000
+        Y: 50000000
+      - X: -110000000
+        Y: 70000000
+      - X: -130000000
+        Y: 70000000
+      - X: -130000000
+        Y: 40000000
+      - X: -50000000
+        Y: 40000000
+      - X: -50000000
+        Y: 20000000
+      - X: -20000000
+        Y: 20000000
+    - - X: -140000000
+        Y: 70000000
+      - X: -160000000
+        Y: 70000000
+      - X: -160000000
+        Y: -10000000
+      - X: -140000000
+        Y: -10000000
+    - - X: 100000000
+        Y: 30000000
+      - X: 90000000
+        Y: 30000000
+      - X: 90000000
+        Y: -70000000
+      - X: 100000000
+        Y: -70000000
+    - - X: 160000000
+        Y: 30000000
+      - X: 150000000
+        Y: 30000000
+      - X: 150000000
+        Y: -100000000
+      - X: 140000000
+        Y: -100000000
+      - X: 140000000
+        Y: 30000000
+      - X: 130000000
+        Y: 30000000
+      - X: 130000000
+        Y: -90000000
+      - X: -20000000
+        Y: -90000000
+      - X: -20000000
+        Y: -100000000
+      - X: -110000000
+        Y: -100000000
+      - X: -110000000
+        Y: -80000000
+      - X: -40000000
+        Y: -80000000
+      - X: -40000000
+        Y: -70000000
+      - X: -20000000
+        Y: -70000000
+      - X: -20000000
+        Y: -50000000
+      - X: -50000000
+        Y: -50000000
+      - X: -50000000
+        Y: -70000000
+      - X: -130000000
+        Y: -70000000
+      - X: -130000000
+        Y: -90000000
+      - X: -160000000
+        Y: -90000000
+      - X: -160000000
+        Y: -110000000
+      - X: 160000000
+        Y: -110000000
+    - - X: -50000000
+        Y: 20000000
+      - X: -130000000
+        Y: 20000000
+      - X: -130000000
+        Y: -10000000
+      - X: -50000000
+        Y: -10000000
   m_CompositePaths:
     m_Paths:
     - - {x: 15.999971, y: 11}
@@ -35733,9 +36249,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1854914590}
-    m_ColliderPaths: []
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths: []
   m_VertexDistance: 0.0005
@@ -36220,6 +36734,82 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e41caa1de42f6584aa19bd2c86c97eb3, type: 3}
+--- !u!1 &1922964535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1922964536}
+  - component: {fileID: 1922964538}
+  - component: {fileID: 1922964537}
+  m_Layer: 5
+  m_Name: SignMessagePanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1922964536
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922964535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 462483054}
+  m_Father: {fileID: 2002423735}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -457.97095, y: 41.278076}
+  m_SizeDelta: {x: -1372.9879, y: -785.8081}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1922964537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922964535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.77254903}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1922964538
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922964535}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1932254356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36593,7 +37183,161 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1997587996}
+    m_ColliderPaths:
+    - - X: -15625000
+        Y: 59375000
+      - X: -20000000
+        Y: 59375000
+      - X: -20000000
+        Y: 51250000
+      - X: -15625000
+        Y: 51250000
+    - - X: -101250000
+        Y: 54375000
+      - X: -109375000
+        Y: 54375000
+      - X: -109375000
+        Y: 50000000
+      - X: -101250000
+        Y: 50000000
+    - - X: -91250000
+        Y: 54375000
+      - X: -99375000
+        Y: 54375000
+      - X: -99375000
+        Y: 50000000
+      - X: -91250000
+        Y: 50000000
+    - - X: -81250000
+        Y: 54375000
+      - X: -89375000
+        Y: 54375000
+      - X: -89375000
+        Y: 50000000
+      - X: -81250000
+        Y: 50000000
+    - - X: -71250000
+        Y: 54375000
+      - X: -79375000
+        Y: 54375000
+      - X: -79375000
+        Y: 50000000
+      - X: -71250000
+        Y: 50000000
+    - - X: -61250000
+        Y: 54375000
+      - X: -69375000
+        Y: 54375000
+      - X: -69375000
+        Y: 50000000
+      - X: -61250000
+        Y: 50000000
+    - - X: -51250000
+        Y: 54375000
+      - X: -59375000
+        Y: 54375000
+      - X: -59375000
+        Y: 50000000
+      - X: -51250000
+        Y: 50000000
+    - - X: -15625000
+        Y: 49375000
+      - X: -20000000
+        Y: 49375000
+      - X: -20000000
+        Y: 41250000
+      - X: -15625000
+        Y: 41250000
+    - - X: -15625000
+        Y: 39375000
+      - X: -20000000
+        Y: 39375000
+      - X: -20000000
+        Y: 31250000
+      - X: -15625000
+        Y: 31250000
+    - - X: -11250000
+        Y: -65625000
+      - X: -19375000
+        Y: -65625000
+      - X: -19375000
+        Y: -70000000
+      - X: -11250000
+        Y: -70000000
+    - - X: -1250000
+        Y: -65625000
+      - X: -9375000
+        Y: -65625000
+      - X: -9375000
+        Y: -70000000
+      - X: -1250000
+        Y: -70000000
+    - - X: 28750000
+        Y: -65625000
+      - X: 20625000
+        Y: -65625000
+      - X: 20625000
+        Y: -70000000
+      - X: 28750000
+        Y: -70000000
+    - - X: 58750000
+        Y: -65625000
+      - X: 50625000
+        Y: -65625000
+      - X: 50625000
+        Y: -70000000
+      - X: 58750000
+        Y: -70000000
+    - - X: 68750000
+        Y: -65625000
+      - X: 60625000
+        Y: -65625000
+      - X: 60625000
+        Y: -70000000
+      - X: 68750000
+        Y: -70000000
+    - - X: 78750000
+        Y: -65625000
+      - X: 70625000
+        Y: -65625000
+      - X: 70625000
+        Y: -70000000
+      - X: 78750000
+        Y: -70000000
+    - - X: 88750000
+        Y: -65625000
+      - X: 80625000
+        Y: -65625000
+      - X: 80625000
+        Y: -70000000
+      - X: 88750000
+        Y: -70000000
+    - - X: 18750000
+        Y: -85625000
+      - X: 10625000
+        Y: -85625000
+      - X: 10625000
+        Y: -90000000
+      - X: 18750000
+        Y: -90000000
+    - - X: 28750000
+        Y: -85625000
+      - X: 20625000
+        Y: -85625000
+      - X: 20625000
+        Y: -90000000
+      - X: 28750000
+        Y: -90000000
+    - - X: 38750000
+        Y: -85625000
+      - X: 30625000
+        Y: -85625000
+      - X: 30625000
+        Y: -90000000
+      - X: 38750000
+        Y: -90000000
   m_CompositePaths:
     m_Paths:
     - - {x: -1.5625293, y: 5.125}
@@ -37341,6 +38085,7 @@ RectTransform:
   - {fileID: 268951659}
   - {fileID: 1776505584}
   - {fileID: 1487269407}
+  - {fileID: 1922964536}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -37950,9 +38695,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1648610718}
     m_Modifications:
+    - target: {fileID: 1058401277626449393, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2889334234524598293, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_Name
       value: Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.x
+      value: 5.57095
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Size.y
+      value: 3.6093347
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.07936883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694262764859498335, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.31252015
       objectReference: {fileID: 0}
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37993,6 +38758,19 @@ PrefabInstance:
     - target: {fileID: 5722333875268904407, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 462483052}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 1922964535}
+    - target: {fileID: 8189576793694368892, guid: 85cfbd51ed5ac2849a84f8e48d418c33, type: 3}
+      propertyPath: customMessage
+      value: To get to higher platforms you can WALL CLIMB, by holding A or D towards
+        the wall you're facing. Beware of the Falling Platforms!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
