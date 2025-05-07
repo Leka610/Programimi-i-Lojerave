@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     public GameObject player;
     public GameObject levelLoader;
     public List <GameObject> levels;
-    private int currentLevelIndex = 0;
+    public int currentLevelIndex = 0;
     public HealthUI healthUI;
     public PlayerHealth playerHealth; // Reference to the PlayerHealth script
 
@@ -85,6 +85,22 @@ public class GameController : MonoBehaviour
     }
 
     void LoadLevel(int level, bool wantSurvivedIncreased) {
+
+        PlayerMovement movement = player.GetComponent<PlayerMovement>();
+
+        if (movement != null)
+        {
+            // Reset all abilities first
+            movement.canDoubleJump = false;
+            movement.canWallJump = false;
+            movement.canDashAbility = false;
+
+            // Unlock based on level
+            if (level >= 1) movement.canDoubleJump = true;  // Unlock double jump at level 1+
+            if (level >= 2) movement.canWallJump = true;    // Unlock wall jump at level 2+
+            if (level >= 3) movement.canDashAbility = true; // Unlock dash at level 3+
+        }
+
         levelLoader.SetActive(false);
 
         levels[currentLevelIndex].gameObject.SetActive(false);

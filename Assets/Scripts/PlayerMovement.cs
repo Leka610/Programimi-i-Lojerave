@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     BoxCollider2D playerCollider;
+    public GameController gameController;
     bool isFacingRight = true;
 
     [Header("Movement")]
@@ -54,6 +55,12 @@ public class PlayerMovement : MonoBehaviour
     float wallJumpTimer;
     public Vector2 wallJumpForce = new Vector2(5f, 10f);
 
+    [Header("Abilities")]
+    public bool canDoubleJump = false;
+    public bool canWallJump = false;
+    public bool canDashAbility = false;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -93,7 +100,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Dash(InputAction.CallbackContext context)
     {
-        if (context.performed && canDash) { 
+        if (context.performed && canDash && canDashAbility)
+        {
             StartCoroutine(DashCoroutine());
         }
     }
@@ -135,7 +143,6 @@ public class PlayerMovement : MonoBehaviour
             isOnPlatform = false; // Set the flag to true when on a moving platform
         }
     }
-
     public void Jump(InputAction.CallbackContext context)
     {
         if (IsDead()) return;
@@ -176,20 +183,16 @@ public class PlayerMovement : MonoBehaviour
             Invoke(nameof(CancelWallJump), wallJumpTime + 0.1f); // Cancel the wall jump after a short delay
         }
     }
+
     private void GroundCheck()
     {
-        if (Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer))
+        bool wasGrounded = isGrounded; // Store previous grounded state
+        isGrounded = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer);
+
+        // Only reset jumps when first landing (not while already grounded)
+        if (isGrounded && !wasGrounded)
         {
-            // Only reset jumpsRemaining when grounded (we should not reset it while in the air)
-            if (!isGrounded)
-            {
-                jumpsRemaining = maxJumps; // Reset jumps to max when the player lands
-            }
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
+            jumpsRemaining = maxJumps; // Reset jumps to max when the player lands
         }
     }
 
